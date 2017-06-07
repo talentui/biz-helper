@@ -1,1 +1,6 @@
 src/
+node_modules/
+yarn.lock/
+.gitignore/
+.npmrc
+.babelrc

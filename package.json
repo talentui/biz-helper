@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "helpers form legacy talentui and new helpers",
   "main": "lib/index.js",
-  "author": "Beisen QD FED team",
+  "author": {
+    "name": "liguoming",
+    "email": "liguoming@beisen.com"
+  },
   "license": "MIT",
   "scripts": {
     "build": "rm -rf lib && babel src -d lib"
