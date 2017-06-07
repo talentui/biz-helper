@@ -1,0 +1,23 @@
+{
+  "name": "@beisen/talent-ui-helper",
+  "version": "1.0.0",
+  "description": "helpers form legacy talentui and new helpers",
+  "main": "lib/index.js",
+  "author": "Beisen QD FED team",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf lib && babel src -d lib"
+  },
+  "dependencies": {
+    "es6-promise": "^4.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash.foreach": "^4.5.0",
+    "url-search-params": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
