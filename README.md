@@ -7,7 +7,8 @@
 
 ### mapActionCreators
 > 如果你在写ActionCreators的时候，想用一个树型结构来代码你组件的结构，并且在传递的时候不用一个一个把方法列出来，可以这样
-```javascript
+
+```js
     export const actionCreator = {
         home: {
             switchLang: function(lang){
@@ -27,7 +28,7 @@
 ```
 > 此时你的home组件可以这样组织
 
-```javascript
+```js
     import React, {Component} from 'react'
     import {connect} from 'react-redux';
     import {actionCreator} from './redux/actions'
@@ -53,8 +54,7 @@
 ```
 
 > 在你的header组件中
-```javascript
-
+```js
     export (props) => {
         let {logout} = props;
         return <header >
@@ -68,13 +68,14 @@
 ### warning
 > 和console.log()差不多，代码很简单，详情自己看
 
-
 ## middlware 这是从Talent UI 1.0中迁移过来的中间件，是慧娟开发的，详情请咨询她
 
 ### AnalysisAfterMiddleware 
 > [path: lib/middleware/analysisAfter.js] 
+
 ### AnalysisBeforeMiddleware 
 > [path: lib/middleware/analysisBefore.js]
+
 ### FetchMiddleware
 > [path: lib/middleware/fetch.js]
 
