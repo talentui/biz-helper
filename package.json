@@ -1,6 +1,6 @@
 {
   "name": "@beisen/talent-ui-helper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "helpers form legacy talentui and new helpers",
   "main": "lib/index.js",
   "author": {
