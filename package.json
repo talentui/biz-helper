@@ -1,6 +1,6 @@
 {
   "name": "@beisen/talent-ui-helper",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "helpers form legacy talentui and new helpers",
   "main": "lib/index.js",
   "author": {
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf lib && babel src -d lib",
+    "build": "rm -rf lib && babel src -d lib --copy-files",
     "prepublish": "yarn run build"
   },
   "dependencies": {
