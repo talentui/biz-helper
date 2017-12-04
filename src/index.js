@@ -6,7 +6,7 @@ import fetchMiddleware from "./middleware/fetch";
 import analysisAfterMiddleware from "./middleware/analysisAfter";
 import analysisBeforeMiddleware from "./middleware/analysisBefore";
 
-export default {
+export {
     combineImmutableReducers,
     mapActionCreators,
     warning,
