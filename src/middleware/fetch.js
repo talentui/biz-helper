@@ -1,7 +1,3 @@
-/**
- * Created by liuhuijuan on 15/8/31.
- */
-import { polyfill } from "es6-promise";
 import "isomorphic-fetch";
 var URLSearchParams = require("url-search-params");
 

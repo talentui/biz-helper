@@ -1,6 +1,6 @@
 {
   "name": "@talentui/biz-helper",
-  "version": "0.0.0-development",
+  "version": "2.0.0",
   "description": "helpers form legacy talentui and new helpers",
   "main": "lib/index.js",
   "author": {
@@ -10,27 +10,26 @@
   "license": "MIT",
   "scripts": {
     "cm": "git-cz",
-    "build": "rm -rf lib && babel src -d lib --copy-files",
-    "prepublish": "yarn run build",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "build": "rm -rf lib && NODE_ENV=production babel src -d lib --copy-files",
+    "prepublish": "npm run build"
   },
   "dependencies": {
-    "es6-promise": "^4.1.0",
-    "isomorphic-fetch": "^2.2.1",
     "lodash.foreach": "^4.5.0",
     "url-search-params": "^0.9.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
     "@talentui/cz-package-changelog": "^1.0.0",
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.5.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
+    "@talentui/get-babel-config": "^4.0.6",
     "commitizen": "^2.9.6",
-    "semantic-release": "^8.2.0"
+    "core-js": "^2.6.5",
+    "isomorphic-fetch": "^2.2.1"
   },
   "peerDependencies": {
-    "immutable": "^3.8.1"
+    "core-js": "^2.6.5",
+    "immutable": "^3.8.1",
+    "isomorphic-fetch": "^2.2.1"
   },
   "repository": {
     "type": "git",
